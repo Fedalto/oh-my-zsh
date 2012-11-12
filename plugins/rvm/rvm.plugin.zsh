@@ -1,3 +1,7 @@
+if [ -d $HOME/.rvm/bin ]; then
+	PATH=$PATH:$HOME/.rvm/bin
+fi
+
 alias rubies='rvm list rubies'
 alias gemsets='rvm gemset list'
 
