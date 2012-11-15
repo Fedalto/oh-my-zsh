@@ -12,7 +12,7 @@ zstyle ':vcs_info:*' enable git hg bzr svn
 
 # check for changes in the git repository
 # can be slow, comment it out if you encounter delays
-zstyle ':vcs_info:git:*' check-for-changes true
+# zstyle ':vcs_info:git:*' check-for-changes true
 
 # Set the formats
 zstyle ':vcs_info:*' actionformats '%F{5}(%f%s%F{5})%F{3}-%F{5}[%F{2}%b%F{3}|%F{1}%a%F{5}]%f %F{6}%u%c%f '
