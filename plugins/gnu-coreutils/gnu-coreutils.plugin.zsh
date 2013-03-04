@@ -1,2 +1,2 @@
-PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
-MANPATH="$(brew --prefix coreutils)/libexec/gnuman:$MANPATH"
+PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
