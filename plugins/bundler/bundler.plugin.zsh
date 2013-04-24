@@ -1,6 +1,6 @@
 # The following is based on https://github.com/gma/bundler-exec
 
-bundled_commands=(annotate cap capify cucumber foreman guard middleman nanoc rackup rainbows rake rspec ruby shotgun spec spork thin thor unicorn unicorn_rails puma)
+bundled_commands=(annotate cap capify cucumber foreman guard jekyll middleman nanoc rackup rainbows rake rspec ruby shotgun spec spin spork thin thor unicorn unicorn_rails puma)
 
 ## Functions
 
@@ -27,6 +27,7 @@ _run-with-bundler() {
 
 ## Main program
 for cmd in $bundled_commands; do
+  eval "function unbundled_$cmd () { $cmd \$@ }"
   eval "function bundled_$cmd () { _run-with-bundler $cmd \$@}"
   alias $cmd=bundled_$cmd
 

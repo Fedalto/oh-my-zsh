@@ -7,4 +7,3 @@ bindkey "^[m" copy-prev-shell-word
 
 ## jobs
 setopt long_list_jobs
-
