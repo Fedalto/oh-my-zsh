@@ -8,7 +8,7 @@ function pyclean() {
     find ${ZSH_PYCLEAN_PLACES} -type f -name "*.py[co]" -delete
 }
 
-if (bpython 2>/dev/null)
+if $(which bpython >/dev/null 2>&1)
   then
     alias p=bpython
 else
