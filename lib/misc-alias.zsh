@@ -1,5 +1,8 @@
 alias j=jobs
-alias ack=ack-grep
+
+if which ack-grep &>/dev/null; then
+  alias ack=ack-grep
+fi
 
 alias su='su -'
 
