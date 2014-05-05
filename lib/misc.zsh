@@ -7,3 +7,5 @@ bindkey "^[m" copy-prev-shell-word
 
 ## jobs
 setopt long_list_jobs
+
+export LC_ALL=en_US.UTF-8
