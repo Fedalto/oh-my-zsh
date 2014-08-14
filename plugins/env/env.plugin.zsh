@@ -9,11 +9,14 @@ export PAGER="less -R"
 export LC_CTYPE=$LANG
 
 # PATH
-if [ -e ~/bin ]
-    then
+if [ -d ~/bin ]; then
     PATH=$PATH:~/bin
 fi
-if [ -e /usr/local/bin ]
-    then
+
+if [ -d /usr/local/bin ]; then
     PATH=/usr/local/bin:$PATH
+fi
+
+if [ -d ~/.local/bin ]; then
+    PATH=$PATH:~/.local/bin
 fi
