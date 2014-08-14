@@ -1,7 +1,7 @@
-# Remove / . - do default.
+# Remove / . - from default.
 export WORDCHARS='*?_[]~=&;!#$%^(){}<>'
 
-export EDITOR='emacs -nw'
+export EDITOR='vim'
 export VISUAL=view
 
 export PAGER="less -R"
