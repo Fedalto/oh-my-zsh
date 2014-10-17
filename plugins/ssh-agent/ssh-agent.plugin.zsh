@@ -8,5 +8,7 @@ if [ -z "$TMUX" ]; then
     fi
   fi
 else
-  export SSH_AUTH_SOCK="/tmp/ssh-agent-$USER-screen"
+  if [ -S "/tmp/ssh-agent-$USER-screen" ]; then
+    export SSH_AUTH_SOCK="/tmp/ssh-agent-$USER-screen"
+  fi
 fi
