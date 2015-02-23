@@ -2,10 +2,16 @@
 autoload -U url-quote-magic
 zle -N self-insert url-quote-magic
 
-## file rename magick
-bindkey "^[m" copy-prev-shell-word
-
 ## jobs
 setopt long_list_jobs
 
-export LC_ALL=en_US.UTF-8
+export LC_ALL=C.UTF-8
+
+## pager
+export PAGER="less"
+export LESS="-R"
+
+# only define LC_CTYPE if undefined
+if [[ -z "$LC_CTYPE" && -z "$LC_ALL" ]]; then
+	export LC_CTYPE=${LANG%%:*} # pick the first entry from LANG
+fi
