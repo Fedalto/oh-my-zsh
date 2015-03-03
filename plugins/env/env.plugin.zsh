@@ -4,7 +4,7 @@ export WORDCHARS='*?_[]~=&;!#$%^(){}<>'
 export EDITOR='vim'
 export VISUAL=view
 
-export PAGER="less -R"
+export PAGER="less -RFX"
 
 export LC_CTYPE=$LANG
 
