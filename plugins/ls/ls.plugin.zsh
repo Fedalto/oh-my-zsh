@@ -9,7 +9,7 @@ then
   ls --color -d . &>/dev/null 2>&1 && LS_COLOR_OPTION='--color=tty' || LS_COLOR_OPTION='-G'
 fi
 
-alias ls="ls $LS_COLOR_OPTION --dereference-command-line --human-readable --indicator-style=classify"
+alias ls="ls $LS_COLOR_OPTION --human-readable --indicator-style=classify"
 
 # Typo?
 alias sl=ls
